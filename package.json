@@ -1,0 +1,35 @@
+{
+  "name": "ion-input-auto-complete",
+  "version": "0.0.1",
+  "description": "ion-input with auto filling component",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "ngc": "ngc",
+    "build": "npm run ngc",
+    "publishPackage": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZameelAmjed/ion-input-auto-complete.git"
+  },
+  "keywords": [],
+  "author": "Zameel Amjed",
+  "license": "MIT",
+  "homepage": "https://www.linkedin.com/in/zameel-amjed/",
+  "devDependencies": {
+    "@angular/common": "5.2.10",
+    "@angular/compiler": "5.2.10",
+    "@angular/compiler-cli": "5.2.10",
+    "@angular/core": "5.2.10",
+    "@angular/forms": "5.2.10",
+    "@angular/platform-browser": "5.2.10",
+    "@angular/platform-browser-dynamic": "5.2.10",
+    "rxjs": "5.5.11",
+    "@types/node": "^9.4.6",
+    "ionic-angular": "3.9.2",
+    "typescript": "2.4.2",
+    "zone.js": "0.8.18"
+  }
+}
