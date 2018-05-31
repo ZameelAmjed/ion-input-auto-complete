@@ -72,7 +72,7 @@ public addProductForm: FormGroup;
 based on `<ion-input>` directive there are three labels types available floating, stacked and fixed. you may use the type here  `[labeltype]="'floating'"` to set the type.
 
 ## About
-if you need a search based autocomplete i would highly recommend @kadoshms 's awasome [ionic2-autocomplete](https://github.com/kadoshms/ionic2-autocomplete) however, i had some issues with styling in ion-input within ion-item. This component can be used with other input fields in ion-list.
+if you need a search based autocomplete i would highly recommend @kadoshms 's awasome [ionic2-autocomplete](https://github.com/kadoshms/ionic2-autocomplete) however, i had some issues with styling in ion-list as text input. This component can be used with other input fields in ion-list.
 ```html
 <ion-list>
   <ion-item>
