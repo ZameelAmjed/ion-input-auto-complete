@@ -99,9 +99,14 @@ var InputAutoCompleteComponent = (function () {
     };
     InputAutoCompleteComponent.prototype.autofillCategory = function (key) {
         var _this = this;
-        this.listprovider.getResults(key).subscribe(function (result) {
-            _this.listarray = result;
-        });
+        if (this.listprovider == "" || this.listprovider == null || this.listprovider == undefined) {
+            this.listprovider = null;
+        }
+        else {
+            this.listprovider.getResults(key).subscribe(function (result) {
+                _this.listarray = result;
+            });
+        }
     };
     InputAutoCompleteComponent.prototype.selectCat = function (item) {
         this.listarray = [];

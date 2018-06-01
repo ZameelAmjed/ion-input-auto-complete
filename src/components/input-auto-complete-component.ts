@@ -147,10 +147,15 @@ export class InputAutoCompleteComponent implements ControlValueAccessor, AfterVi
     }
 
     autofillCategory(key){
-        this.listprovider.getResults(key).subscribe(result=>{
-            this.listarray = result;
-        });
+        if (this.listprovider == "" || this.listprovider == null || this.listprovider == undefined){
+            this.listprovider = null;
+        }else{
+            this.listprovider.getResults(key).subscribe(result=>{
+                this.listarray = result;
+            });
+        }
     }
+
     selectCat(item){
         this.listarray = [];
         this.ctrl.setValue(item);
